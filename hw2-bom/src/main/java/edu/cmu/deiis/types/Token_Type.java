@@ -10,8 +10,8 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/** This kind of type is the smallest type in the document. The system will annotate eachtoken span in each question and answer (break on whitespace and punctuation).
- * Updated by JCasGen Mon Sep 23 22:55:32 EDT 2013
+/** 
+ * Updated by JCasGen Mon Sep 23 23:11:57 EDT 2013
  * @generated */
 public class Token_Type extends Annotation_Type {
   /** @generated */

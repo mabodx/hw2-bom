@@ -9,9 +9,9 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** This kind of type is the smallest type in the document. The system will annotate eachtoken span in each question and answer (break on whitespace and punctuation).
- * Updated by JCasGen Mon Sep 23 22:55:32 EDT 2013
- * XML source: /Users/mabodx/git/hw2-bom/hw2-bom/src/main/resources/descriptors/deiis_types.xml
+/** 
+ * Updated by JCasGen Mon Sep 23 23:11:57 EDT 2013
+ * XML source: /Users/mabodx/git/hw2-bom/hw2-bom/src/main/resources/hw2-bom-aee.xml
  * @generated */
 public class Token extends Annotation {
   /** @generated
