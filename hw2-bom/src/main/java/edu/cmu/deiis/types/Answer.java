@@ -13,7 +13,7 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** This kind of type is to show a instance of one answer. Also, it answer whether this kind of answer is correct answer or just a wrong answer.
- * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
+ * Updated by JCasGen Mon Sep 23 22:55:32 EDT 2013
  * XML source: /Users/mabodx/git/hw2-bom/hw2-bom/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class Answer extends Annotation {

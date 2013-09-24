@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** This kind of type is to show a instance of one answer. Also, it answer whether this kind of answer is correct answer or just a wrong answer.
- * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
+ * Updated by JCasGen Mon Sep 23 22:55:32 EDT 2013
  * @generated */
 public class Answer_Type extends Annotation_Type {
   /** @generated */

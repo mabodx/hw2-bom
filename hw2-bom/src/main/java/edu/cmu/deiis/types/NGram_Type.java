@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** This is a kind of type that use N token to form a Gram to calculate the score of theanswer.
- * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
+ * Updated by JCasGen Mon Sep 23 22:55:32 EDT 2013
  * @generated */
 public class NGram_Type extends Annotation_Type {
   /** @generated */
