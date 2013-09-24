@@ -9,9 +9,12 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
- * XML source: /home/diwang/ur-workspace/deiis-f13-homework/src/main/resources/desc/deiis_types.xml
+import org.apache.uima.jcas.cas.FSArray;
+
+
+/** This kind of type is to show a instance of one answer. Also, it answer whether this kind of answer is correct answer or just a wrong answer.
+ * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
+ * XML source: /Users/mabodx/git/hw2-bom/hw2-bom/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class Answer extends Annotation {
   /** @generated
@@ -77,6 +80,58 @@ public class Answer extends Annotation {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
       jcasType.jcas.throwFeatMissing("isCorrect", "edu.cmu.deiis.types.Answer");
     jcasType.ll_cas.ll_setBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect, v);}    
+   
+    
+  //*--------------*
+  //* Feature: sentence
+
+  /** getter for sentence - gets 
+   * @generated */
+  public SentenceQA getSentence() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_sentence == null)
+      jcasType.jcas.throwFeatMissing("sentence", "edu.cmu.deiis.types.Answer");
+    return (SentenceQA)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Answer_Type)jcasType).casFeatCode_sentence)));}
+    
+  /** setter for sentence - sets  
+   * @generated */
+  public void setSentence(SentenceQA v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_sentence == null)
+      jcasType.jcas.throwFeatMissing("sentence", "edu.cmu.deiis.types.Answer");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Answer_Type)jcasType).casFeatCode_sentence, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: elementNgram
+
+  /** getter for elementNgram - gets 
+   * @generated */
+  public FSArray getElementNgram() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_elementNgram == null)
+      jcasType.jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Answer_Type)jcasType).casFeatCode_elementNgram)));}
+    
+  /** setter for elementNgram - sets  
+   * @generated */
+  public void setElementNgram(FSArray v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_elementNgram == null)
+      jcasType.jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Answer_Type)jcasType).casFeatCode_elementNgram, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for elementNgram - gets an indexed value - 
+   * @generated */
+  public NGram getElementNgram(int i) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_elementNgram == null)
+      jcasType.jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Answer_Type)jcasType).casFeatCode_elementNgram), i);
+    return (NGram)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Answer_Type)jcasType).casFeatCode_elementNgram), i)));}
+
+  /** indexed setter for elementNgram - sets an indexed value - 
+   * @generated */
+  public void setElementNgram(int i, NGram v) { 
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_elementNgram == null)
+      jcasType.jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Answer_Type)jcasType).casFeatCode_elementNgram), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Answer_Type)jcasType).casFeatCode_elementNgram), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

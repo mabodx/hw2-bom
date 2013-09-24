@@ -12,8 +12,8 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
+/** This kind of type is a base type in the system. The two features this type has are casProcessorId and confidence. The other type will be the extended class of this one. Each annotation need a confidence score, so this will provide confidence score for each annotation. casProcessorId is a string that we can get where the annotator is produced and provide information for annotator.
+ * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
  * @generated */
 public class Annotation_Type extends org.apache.uima.jcas.tcas.Annotation_Type {
   /** @generated */

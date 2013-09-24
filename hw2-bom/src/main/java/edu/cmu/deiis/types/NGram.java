@@ -10,9 +10,9 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.cas.FSArray;
 
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
- * XML source: /home/diwang/ur-workspace/deiis-f13-homework/src/main/resources/desc/deiis_types.xml
+/** This is a kind of type that use N token to form a Gram to calculate the score of theanswer.
+ * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
+ * XML source: /Users/mabodx/git/hw2-bom/hw2-bom/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class NGram extends Annotation {
   /** @generated

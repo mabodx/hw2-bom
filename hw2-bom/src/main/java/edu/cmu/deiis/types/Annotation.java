@@ -9,9 +9,9 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
- * XML source: /home/diwang/ur-workspace/deiis-f13-homework/src/main/resources/desc/deiis_types.xml
+/** This kind of type is a base type in the system. The two features this type has are casProcessorId and confidence. The other type will be the extended class of this one. Each annotation need a confidence score, so this will provide confidence score for each annotation. casProcessorId is a string that we can get where the annotator is produced and provide information for annotator.
+ * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
+ * XML source: /Users/mabodx/git/hw2-bom/hw2-bom/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class Annotation extends org.apache.uima.jcas.tcas.Annotation {
   /** @generated

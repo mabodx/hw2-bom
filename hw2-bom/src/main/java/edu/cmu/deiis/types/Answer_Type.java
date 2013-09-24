@@ -12,8 +12,8 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
+/** This kind of type is to show a instance of one answer. Also, it answer whether this kind of answer is correct answer or just a wrong answer.
+ * Updated by JCasGen Mon Sep 23 22:40:10 EDT 2013
  * @generated */
 public class Answer_Type extends Annotation_Type {
   /** @generated */
@@ -60,6 +60,61 @@ public class Answer_Type extends Annotation_Type {
     ll_cas.ll_setBooleanValue(addr, casFeatCode_isCorrect, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_sentence;
+  /** @generated */
+  final int     casFeatCode_sentence;
+  /** @generated */ 
+  public int getSentence(int addr) {
+        if (featOkTst && casFeat_sentence == null)
+      jcas.throwFeatMissing("sentence", "edu.cmu.deiis.types.Answer");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_sentence);
+  }
+  /** @generated */    
+  public void setSentence(int addr, int v) {
+        if (featOkTst && casFeat_sentence == null)
+      jcas.throwFeatMissing("sentence", "edu.cmu.deiis.types.Answer");
+    ll_cas.ll_setRefValue(addr, casFeatCode_sentence, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_elementNgram;
+  /** @generated */
+  final int     casFeatCode_elementNgram;
+  /** @generated */ 
+  public int getElementNgram(int addr) {
+        if (featOkTst && casFeat_elementNgram == null)
+      jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_elementNgram);
+  }
+  /** @generated */    
+  public void setElementNgram(int addr, int v) {
+        if (featOkTst && casFeat_elementNgram == null)
+      jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    ll_cas.ll_setRefValue(addr, casFeatCode_elementNgram, v);}
+    
+   /** @generated */
+  public int getElementNgram(int addr, int i) {
+        if (featOkTst && casFeat_elementNgram == null)
+      jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elementNgram), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elementNgram), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elementNgram), i);
+  }
+   
+  /** @generated */ 
+  public void setElementNgram(int addr, int i, int v) {
+        if (featOkTst && casFeat_elementNgram == null)
+      jcas.throwFeatMissing("elementNgram", "edu.cmu.deiis.types.Answer");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elementNgram), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elementNgram), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elementNgram), i, v);
+  }
+ 
 
 
 
@@ -72,6 +127,14 @@ public class Answer_Type extends Annotation_Type {
  
     casFeat_isCorrect = jcas.getRequiredFeatureDE(casType, "isCorrect", "uima.cas.Boolean", featOkTst);
     casFeatCode_isCorrect  = (null == casFeat_isCorrect) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_isCorrect).getCode();
+
+ 
+    casFeat_sentence = jcas.getRequiredFeatureDE(casType, "sentence", "edu.cmu.deiis.types.SentenceQA", featOkTst);
+    casFeatCode_sentence  = (null == casFeat_sentence) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_sentence).getCode();
+
+ 
+    casFeat_elementNgram = jcas.getRequiredFeatureDE(casType, "elementNgram", "uima.cas.FSArray", featOkTst);
+    casFeatCode_elementNgram  = (null == casFeat_elementNgram) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_elementNgram).getCode();
 
   }
 }

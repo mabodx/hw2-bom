@@ -75,4 +75,8 @@
 			<version>2.4.0</version>
 		</dependency>
 	</dependencies>
+	<scm>
+		<connection>scm:git:git@github.com:mabodx/hw2-bom.git</connection>
+		<developerConnection>scm:git:git@github.com:mabodx/hw2-bom.git</developerConnection>
+	</scm>
 </project>
